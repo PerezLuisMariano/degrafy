@@ -1,0 +1,21 @@
+body
+{
+    background-color: #000000;
+    color: #000000;
+    font-family: Bebas Neue;
+    font-size: 25px;
+    font-weight: bold;
+    line-height : 43px;
+    position:fixed;
+
+}
+main
+{
+    color: #ffffff;
+    font-family: Bebas Neue;
+    font-size: 25px;
+    font-weight: bold;
+    line-height : 43px;
+    position:fixed;
+    bottom: 0;
+}
