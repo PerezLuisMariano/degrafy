@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --font-general: poppins, sans-serif;
+}
 html{
     background-color: #000000;
     font-size: 62.5%;
-    font-family: silka, sans-serif;
+    font-family: var(--font-general);
     
 }
 
@@ -35,17 +38,15 @@ main{
 .main-content{
     background-color: black;
     width: 100vw;
-    height: 58vh; 
+    height: 76vh; 
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .main-content a{
     text-decoration: none;
 }
-
 .main-content__button{
     background-color: black;
     color: #ffffff;
@@ -53,13 +54,13 @@ main{
     height: 75px;
     border-radius: 5px;
     border: 1px solid #ffffff;
-
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 70px;
+    top: 20px;
     bottom: 50px;
+    cursor: pointer;
     transition: 0.2s;
 }
 .main-content__button:hover{
@@ -68,9 +69,8 @@ main{
     width: 339px;
     height:90px;
 }
-
 .main-content__button p{
-    font-family: silka, sans-serif;
+    font-family: var(--font-general);
     font-size: 2.0rem;
     text-align: center;
     justify-content: center;
@@ -80,61 +80,37 @@ main{
     width: 85px;
     display: inline-block;
 }
+
 /*MAIN - social media*/
-.social-media{
+.about-us{
     width: 100vw;
-    height: 30vh;
+    height: 12vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom: 0;
+}
+.about-us nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.social-media img{
+.about-us nav img{
+    margin-right: 30px;
+    width: 23px;
     position: relative;
-    width: 25px;
-    margin: 20px;
-    transition: 0.3s;
-}
-.social-media img:hover{
-    width: 40px;
-}
-
-
-
-
-/*MAIN - panel*
-.panel_main__content{
-    background-color: #000;
-    width: 100vw;
-    height: 85vh;
-    position: absolute;
-    bottom: 0;
-    right: -100vw;
-    transition: right  0.3s;
-}
-.panel-main__menu img{
     cursor: pointer;
-    width: 50px;
-    position:absolute;
-    top: 25px;
-    right: 5%;
-    transition: 0.2s;
-
+    transition: 0.1s;
 }
-
-
-.panel_main__content p{
+.about-us a{
     color: #ffffff;
-    padding: 15px;
-    font-family: silka, sans-serif;
-    font-size: 2.0rem;
-    text-align: left;
-}
-
-.panel-main__checkbox:checked ~ .panel_main__content{
-    right: 0vw;
-}
-
-.panel-main__checkbox{
-    display: none;
+    font-family: var(--font-general);
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-style: normal;
+    cursor: pointer;
 }
