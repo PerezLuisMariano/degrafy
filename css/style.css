@@ -7,10 +7,9 @@
     --font-general: poppins, sans-serif;
 }
 html{
-    background-color: #000000;
+    background-color: black;
     font-size: 62.5%;
     font-family: var(--font-general);
-    
 }
 
 /*FOOTER*/
